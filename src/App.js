@@ -9,15 +9,31 @@ import AuthLayout from "./layouts/auth";
 
 // pages
 import { HomePage } from "./pages/home";
+import { LoanPage } from "./pages/loan";
 import { LoginPage } from "./pages/login";
 
 function App() {
   return (
     <>
       <Switch>
-        <AppRoute exact path='/' component={HomePage} layout={DashboardLayout} />
-
-        <AppRoute path='/login' component={LoginPage} layout={AuthLayout} />
+        <AppRoute
+          exact
+          path='/'
+          component={HomePage}
+          layout={DashboardLayout}
+        />
+        <AppRoute
+          exact
+          path='/loan'
+          component={LoanPage}
+          layout={DashboardLayout}
+        />
+        <AppRoute
+          exact
+          path='/login'
+          component={LoginPage}
+          layout={AuthLayout}
+        />
 
         <Redirect to='/' />
       </Switch>

@@ -79,7 +79,10 @@
       width: var(--full);
       height: auto;
     }
-
+    .active {
+      background-color: var(--lite-green);
+      border-radius: 10px;
+    }
     > li {
       margin-bottom: 15px;
       width: var(--full);

@@ -63,54 +63,78 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
       </div>
       <ul className='navLinks'>
         <li>
-          <NavLink to='/dashboard' className='dashLink'>
+          <NavLink to='/' className='dashLink' activeClassName='active' exact={true}>
             <Menu />
             <span>Home</span>
           </NavLink>
         </li>
 
         <li>
-          <NavLink to='/crowd-invest' className='dashLink'>
+          <NavLink
+            to='/send-money'
+            className='dashLink'
+            activeClassName='active'
+          >
             <Send />
             <span>Send Money</span>
           </NavLink>
         </li>
 
         <li>
-          <NavLink to='/long-hold-investment' className='dashLink'>
+          <NavLink
+            to='/investment'
+            className='dashLink'
+            activeClassName='active'
+          >
             <Investment />
             <span>Investment</span>
           </NavLink>
         </li>
 
         <li>
-          <NavLink to='/favourite' className='dashLink'>
+          <NavLink
+            to='/loan'
+            className='dashLink'
+            activeClassName='active'
+          >
             <Loan />
             <span>Loan</span>
           </NavLink>
         </li>
 
         <li>
-          <NavLink to='/wallet' className='dashLink'>
+          <NavLink to='/cards' className='dashLink' activeClassName='active'>
             <Card />
             <span>Cards</span>
           </NavLink>
         </li>
 
         <li>
-          <NavLink to='/my-portfolio' className='dashLink'>
+          <NavLink
+            to='/transaction'
+            className='dashLink'
+            activeClassName='active'
+          >
             <Transaction />
             <span>Transaction</span>
           </NavLink>
         </li>
         <li>
-          <NavLink to='/my-portfolio' className='dashLink'>
+          <NavLink
+            to='/marketplace'
+            className='dashLink'
+            activeClassName='active'
+          >
             <Market />
             <span>Marketplace</span>
           </NavLink>
         </li>
         <li>
-          <NavLink to='/my-portfolio' className='dashLink'>
+          <NavLink
+            to='/settings'
+            className='dashLink'
+            activeClassName='active'
+          >
             <Settings />
             <span>Settings</span>
           </NavLink>
@@ -119,7 +143,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
       <div className={`navLogout`}>
         <Logout />
         <button
-        className="logout"
+          className='logout'
           // onClick={(e) => {
           //   e.preventDefault();
           //   router.push("/");
