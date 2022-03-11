@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./styles.scss";
 // import Link from "next/link";
 import { NavLink } from "react-router-dom";
-import { ReactComponent as Logo } from "../../../assets/images/Logo.svg";
+import { ReactComponent as Logo } from "../../../assets/images/cloudbank-2.svg";
 import { ReactComponent as ArrowDown } from "../../../assets/images/arrow-down-uncloak.svg";
 import ProfilePix from "../../../assets/images/ProfilePix.png";
 // import Nav from "../nav";

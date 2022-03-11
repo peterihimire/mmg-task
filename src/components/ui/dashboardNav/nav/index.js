@@ -3,23 +3,21 @@ import "./styles.scss";
 // import Dropdown from "../dropdown";
 // import { useRouter } from "next/router";
 // import Link from "next/link";
-import { NavLink } from "react-router-dom";
-import { ReactComponent as Search } from "../../../../assets/images/search.svg";
+import { NavLink, Link } from "react-router-dom";
+import { ReactComponent as Logout } from "../../../../assets/images/turnoff.svg";
+// import Logout from "../../../../assets/images/turnoff.svg";
+import { ReactComponent as Logo } from "../../../../assets/images/cloudbank-1.svg";
 
-// import ActiveLink from "../../../../hoc/activeLink2";
-// import Logo from "../../../../public/images/logo-light.svg";
-// import LogoDark from "../../../../public/images/logo-dark.svg";
-// import Dashboard from "../../../../public/images/dashboardd.svg";
+// import Menu from "../../../../assets/images/menu.svg";
 
-// import CrowdInvest from "../../../../public/images/crowd-invest.svg";
-// import LongHold from "../../../../public/images/long-hold.svg";
-// import Wallet from "../../../../public/images/wallet.svg";
-// import Portfolio from "../../../../public/images/portfolio.svg";
-// import Favourite from "../../../../public/images/favourite.svg";
-// import Referral from "../../../../public/images/referral.svg";
-// import Settings from "../../../../public/images/settings.svg";
-// import Attention from "../../../../public/images/attention.svg";
-// import Logout from "../../../../public/images/logoutt.svg";
+import { ReactComponent as Menu } from "../../../../assets/images/menu.svg";
+import { ReactComponent as Send } from "../../../../assets/images/send.svg";
+import { ReactComponent as Investment } from "../../../../assets/images/investment.svg";
+import { ReactComponent as Loan } from "../../../../assets/images/loan-fill.svg";
+import { ReactComponent as Card } from "../../../../assets/images/card-face.svg";
+import { ReactComponent as Transaction } from "../../../../assets/images/bill.svg";
+import { ReactComponent as Market } from "../../../../assets/images/market.svg";
+import { ReactComponent as Settings } from "../../../../assets/images/settings-line.svg";
 
 const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
   // const [showLang, setShowLang] = useState(false);
@@ -59,65 +57,77 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
     // <nav className={`${styles.nav} ${isOpen ? styles.show : ""}`} id="navbar">
     <nav className='nav' id='navbar'>
       <div className='logo'>
-        {/* <Link to='/'>
-          <a
-          // className={`${isDropOpen ? styles.lightLogo : ""}`}
-          >
-            {bgChange ||
-            isOpen ||
-            router.pathname === "/contact-us" ||
-            router.pathname === "/about-us" ||
-            router.pathname === "/faq" ? (
-              <LogoDark />
-            ) : (
-              <Logo />
-            )}
-          </a>
-        </Link> */}
+        <Link to='/'>
+          <Logo />
+        </Link>
       </div>
       <ul className='navLinks'>
         <li>
           <NavLink to='/dashboard' className='dashLink'>
-            <Search />
-            <span>Profile</span>
+            <Menu />
+            <span>Home</span>
           </NavLink>
         </li>
 
         <li>
           <NavLink to='/crowd-invest' className='dashLink'>
-            <Search />
-            <span>Notification</span>
+            <Send />
+            <span>Send Money</span>
           </NavLink>
         </li>
 
         <li>
           <NavLink to='/long-hold-investment' className='dashLink'>
-            <Search />
-            <span>Team Members</span>
+            <Investment />
+            <span>Investment</span>
           </NavLink>
         </li>
 
         <li>
           <NavLink to='/favourite' className='dashLink'>
-            <Search />
-            <span>Token</span>
+            <Loan />
+            <span>Loan</span>
           </NavLink>
         </li>
 
         <li>
           <NavLink to='/wallet' className='dashLink'>
-            <Search />
-            <span>Invoice</span>
+            <Card />
+            <span>Cards</span>
           </NavLink>
         </li>
 
         <li>
           <NavLink to='/my-portfolio' className='dashLink'>
-            <Search />
-            <span>Billing</span>
+            <Transaction />
+            <span>Transaction</span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/my-portfolio' className='dashLink'>
+            <Market />
+            <span>Marketplace</span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/my-portfolio' className='dashLink'>
+            <Settings />
+            <span>Settings</span>
           </NavLink>
         </li>
       </ul>
+      <div className={`navLogout`}>
+        <Logout />
+        <button
+        className="logout"
+          // onClick={(e) => {
+          //   e.preventDefault();
+          //   router.push("/");
+          // }}
+        >
+          Log out
+        </button>
+      </div>
     </nav>
   );
 };

@@ -17,7 +17,6 @@
   width: 300px;
   // box-shadow: var(--box-shadow);
 
-
   // &.show {
   //   left: 0;
   // }
@@ -93,18 +92,30 @@
       }
 
       > a {
+        color: var(--pry-green);
+        font-style: normal;
+        font-weight: 400;
         font-size: 16px;
-        color: var(--black);
-        font-weight: bold;
+        line-height: 19px;
 
         @media (max-width: 1264px) {
-          // color: var(--black) !important;
+          font-weight: 400;
           font-size: 16px;
-          font-weight: bold;
+          line-height: 19px;
         }
 
         &.darkText {
           color: var(--new-blue);
+        }
+      }
+
+      &:last-of-type {
+        margin-bottom: 150px;
+      }
+
+      @media (max-width: 700px) {
+        &:last-of-type {
+          margin-bottom: 50px;
         }
       }
     }
@@ -139,7 +150,7 @@
 
     button {
       background: none;
-      color: var(--white);
+      color: var(--red);
       margin-left: 10px;
     }
   }

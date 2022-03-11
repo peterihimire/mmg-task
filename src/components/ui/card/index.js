@@ -9,7 +9,7 @@ const Card = ({ id, title, info, src, alt }) => {
         <img loading='lazy' alt={alt} src={src} />
       </div>
       <div className={`cardTitle`}>
-        <h3>{title}</h3>
+        <p>{title}</p>
       </div>
       <div className={`cardInfo`}>
         <p>{info}</p>

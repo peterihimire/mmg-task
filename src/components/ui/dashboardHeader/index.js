@@ -3,7 +3,7 @@ import "./styles.scss";
 // import Link from "next/link";
 import { Link } from "react-router-dom";
 import Nav from "../dashboardNav";
-import { ReactComponent as Logo } from "../../../assets/images/Logo.svg";
+import Logo from "../../../assets/images/cloudbank-2.svg";
 
 // import Logo from "../../../public/images/logo-light.svg";
 // import LogoDark from "../../../public/images/logo-dark.svg";
@@ -50,11 +50,7 @@ const Header = ({ isOpen, clicked }) => {
     <header className='header'>
       <div className='wrapper'>
         <div className='logo'>
-          <Link to='/'>
-            {/* <a className={`${isDropOpen ? styles.lightLogo : ""}`}> */}
-              <Logo />
-            {/* </a> */}
-          </Link>
+          <Link to='/'><img src={Logo} alt='' /></Link>
         </div>
 
         <Nav
