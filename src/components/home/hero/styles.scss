@@ -1,0 +1,13 @@
+.hero {
+  h3 {
+  }
+  .hero-text {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: var(--pry-green);
+      font-weight: bold;
+    }
+  }
+}

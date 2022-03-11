@@ -40,12 +40,81 @@ body._fixed {
   margin: 0 auto;
 }
 
+// h1,
+// h2,
+// h3,
+// p {
+//   line-height: 1.4;
+//   margin: 0;
+// }
+
+// ul,
+// li {
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// a {
+//   outline: none;
+//   font-family: inherit;
+//   white-space: nowrap;
+//   text-decoration: none;
+// }
+
+// button {
+//   outline: none;
+//   font: inherit;
+//   color: inherit;
+//   cursor: pointer;
+// }
+
+// label {
+//   display: table;
+//   width: auto;
+//   margin-bottom: 10px;
+//   font-size: 14px;
+//   color: var(--text-dark);
+// }
+
+// input,
+// select {
+//   -webkit-appearance: none;
+//   appearance: none;
+//   outline: none;
+//   border-radius: 4px;
+//   border: 2px solid #e3e6ea;
+//   background: var(--fade);
+//   font-size: 14px;
+// }
+
+// select {
+//   cursor: pointer;
+// }
+
+// 1114px 1023px 900px 700px
+
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
-  line-height: 1.4;
+  line-height: 1.2;
   margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: Wesfy-Bold;
+}
+
+p {
+  font-size: 16px;
 }
 
 ul,
@@ -67,32 +136,393 @@ button {
   font: inherit;
   color: inherit;
   cursor: pointer;
+  border: 0;
+}
+
+button:disabled {
+  color: var(--white);
+  background: var(--ghost);
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 16px;
+  color: var(--white);
+  font-family: Proxima-Regular;
+  font-size: 16px;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+  font-family: Proxima-Regular;
+  border-radius: 16px;
+  font-size: 16px;
+}
+
+.btn-transparent-dark {
+  background: transparent;
+  border: 1px solid var(--dashBlue);
+  color: var(--dashBlue);
+  font-family: Proxima-Regular;
+  border-radius: 16px;
+  font-size: 16px;
+
+  // &:hover {
+  //   background: var(--black);
+
+  // }
+}
+
+.btn-dark {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--white);
+  font-family: Proxima-Regular;
+  border-radius: 16px;
+  font-size: 16px;
+}
+
+.btn-light {
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  color: #030303;
+  font-family: Proxima-Regular;
+  border-radius: 16px;
+  font-size: 16px;
+}
+
+.btn-small {
+  width: 122px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-large {
+  width: 316px;
+  height: 56px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-medium {
+  width: 200px;
+  height: 48px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-login {
+  width: 100px;
+  height: 48px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-curate {
+  width: 160px;
+  height: 55px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-block {
+  width: 100%;
+  height: 58px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  object-fit: cover;
+  display: block;
 }
 
 label {
-  display: table;
-  width: auto;
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: var(--text-dark);
+  display: block;
+  font-size: 15px;
+  margin-bottom: 12px;
 }
 
-input,
-select {
+input:not([type="radio"]),
+input:not([type="checkbox"]),
+select,
+textarea {
   -webkit-appearance: none;
   appearance: none;
+  font-size: 1rem;
   outline: none;
-  border-radius: 4px;
-  border: 2px solid #e3e6ea;
-  background: var(--fade);
-  font-size: 14px;
+  color: inherit;
+  width: 100%;
+  font-family: inherit;
+  border: 1.5px solid #b6b7b9;
+  // background: var(--white);
+  // background: transparent;
+  background: rgba(255, 255, 255, 0.137);
+  border-radius: 12px !important;
+  height: 55px !important;
+  transition: all 0.3s ease-in-out;
+  padding: 12px;
+  color: #65676f;
+
+  &:focus {
+    border: 1px solid var(--primary);
+  }
 }
 
 select {
   cursor: pointer;
 }
 
-// 1114px 1023px 900px 700px
+textarea {
+  resize: none;
+  height: 150px !important;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+  border: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+input[type="radio"] {
+  -webkit-appearance: radio;
+  appearance: radio;
+  border: 0;
+  margin: 0;
+  border-radius: 50% !important;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.input-wrapper {
+  width: 100%;
+  position: relative;
+  height: 56px;
+
+  > label {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+
+  input {
+    padding: 12px 38px 12px 12px !important;
+  }
+}
+
+.profile-input-wrapper {
+  position: relative;
+  max-width: 100%;
+
+  label {
+    position: absolute !important;
+    top: 5px !important;
+    left: 15px !important;
+    margin-bottom: 0px !important;
+    font-size: 10px;
+    line-height: 12px;
+    color: #65676f;
+  }
+}
+
+// react-datepicker style
+// .react-datepicker-wrapper,
+.react-datepicker__input-container,
+// .react-datepicker__input-container 
+input {
+  &::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    // background: url("/images/calendar-outline.svg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: block;
+  }
+}
+
+.react-datepicker-wrapper {
+  color: rgb(121, 121, 121) !important;
+}
+
+// dropzone
+.dropzone {
+  // border: solid 3px rgb(121, 121, 121) !important;
+  border-style: dashed;
+  border-color: #b6b7b9;
+  border-width: 2px;
+  border-radius: 16px;
+  padding: 60px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin-bottom: 8px !important;
+  }
+
+  p {
+    margin-bottom: 5px !important;
+    color: #333131;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+
+    &:last-of-type {
+      font-size: 10px;
+      line-height: 12px;
+      color: #65676f;
+    }
+  }
+}
+// mine
+.input-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .icon-wrapper {
+    position: absolute;
+    right: 16px;
+    bottom: 18%;
+    background: transparent;
+  }
+}
+
+.select-wrapper {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  color: rgb(121, 121, 121) !important;
+
+  &::after {
+    content: "";
+    width: 10px;
+    height: 6px;
+    // background: url("/images/arrow-ios-downward.svg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: block;
+  }
+}
+
+// multiselect
+
+.multiSelectContainer {
+  .searchWrapper {
+    padding: 0;
+    border: 0;
+    box-shadow: 0px 0px 4px rgba(71, 71, 71, 0.15);
+
+    input {
+      margin: 0;
+      border: 0;
+      font-family: inherit;
+      font-size: 16px;
+      height: 43px;
+
+      &::placeholder {
+        text-align: center;
+      }
+    }
+  }
+
+  .optionListContainer {
+    z-index: 40;
+
+    .option {
+      font-size: 16px;
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: all 0.4s ease-in-out;
+  // blur property
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  @media (min-width: 1265px) {
+    display: none;
+  }
+
+  &.show {
+    visibility: visible;
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+
+.hide-scrollbar {
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+
+  @media (max-width: 1387px) {
+    width: 90%;
+  }
+
+  @media (max-width: 1315px) {
+    width: 95%;
+  }
+}
+
 
 // hamburger
 

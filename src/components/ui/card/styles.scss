@@ -1,0 +1,24 @@
+.card {
+  background: var(--white);
+  // border: 1px solid #d9d6d6;
+  // box-shadow: 0px 0px 5px 1px rgba(89, 89, 89, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 11px 21px 24px;
+  height: 400px;
+
+  .cardImage {
+    // width: 50%;
+  }
+
+  .cardTitle {
+    color: var(--pry-green);
+  }
+  .cardInfo {
+    color: var(--text-primary);
+  }
+}

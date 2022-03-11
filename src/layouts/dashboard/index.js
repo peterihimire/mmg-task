@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import  "./styles.scss";
 import Header from "../../components/ui/dashboardHeader";
-// import Backdrop from "../../components/ui/backdrop";
+import Backdrop from "../../components/ui/backdrop";
 // import Footer from "../../components/ui/footer";
 import Sidebar from "../../components/ui/dashboardNav";
 // import DashboardHeader from "../../components/ui/dashboardMainHeader";
@@ -23,7 +23,7 @@ const DashboardLayout = ({ children }) => {
   return (
     <div className='layout'>
       <Sidebar isOpen={open} />
-      {/* <Backdrop
+      <Backdrop
         open={open}
         clicked={() => {
           setOpen(false);
@@ -31,7 +31,7 @@ const DashboardLayout = ({ children }) => {
           document.documentElement.classList.remove("_fixed");
           document.body.classList.remove("_fixed");
         }}
-      /> */}
+      />
 
       <Header
         isOpen={open}
