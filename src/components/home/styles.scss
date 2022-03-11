@@ -1,0 +1,35 @@
+.homepage {
+  // background-color: aqua;
+
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+    // height: 100%;
+    max-width: var(--wrapper-max-width);
+
+    .test-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--white);
+      padding: 30px;
+
+      border: 1px solid #ebeaed;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 1387px) {
+      width: 90%;
+    }
+
+    @media (max-width: 1315px) {
+      width: 95%;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
