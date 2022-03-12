@@ -6,10 +6,10 @@ import Footer from "../../components/ui/footer";
 
 const LandingLayout = ({ children }) => {
   return (
-    <div className="landing-layout">
+    <div className='landing-layout'>
       <Header />
 
-      <main className="main">{children}</main>
+      <main className='main'>{children}</main>
 
       <Footer />
     </div>

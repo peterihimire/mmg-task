@@ -1,24 +1,22 @@
-import React, { useState } from "react";
-import  "./styles.scss";
+import React, { useState, useEffect } from "react";
 import Header from "../../components/ui/dashboardHeader";
 import Backdrop from "../../components/ui/backdrop";
-// import Footer from "../../components/ui/footer";
+import { useLocation } from "react-router-dom";
 import Sidebar from "../../components/ui/dashboardNav";
-// import DashboardHeader from "../../components/ui/dashboardMainHeader";
 
-// import { useRouter } from "next/router";
+import "./styles.scss";
 
 const DashboardLayout = ({ children }) => {
   const [open, setOpen] = useState(false);
 
-  // const router = useRouter();
+  const router = useLocation();
 
-  // useEffect(() => {
-  //   setOpen(false);
+  useEffect(() => {
+    setOpen(false);
 
-  //   document.documentElement.classList.remove("_fixed");
-  //   document.body.classList.remove("_fixed");
-  // }, [router.pathname]);
+    document.documentElement.classList.remove("_fixed");
+    document.body.classList.remove("_fixed");
+  }, [router.pathname]);
 
   return (
     <div className='layout'>
@@ -42,10 +40,8 @@ const DashboardLayout = ({ children }) => {
           document.body.classList.toggle("_fixed");
         }}
       />
-      {/* <DashboardHeader /> */}
-      <main className='main'>{children}</main>
 
-      {/* <Footer /> */}
+      <main className='main'>{children}</main>
     </div>
   );
 };
