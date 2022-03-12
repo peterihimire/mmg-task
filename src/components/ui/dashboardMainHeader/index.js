@@ -1,82 +1,15 @@
-import React, { useEffect } from "react";
-import "./styles.scss";
-// import Link from "next/link";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { ReactComponent as Logo } from "../../../assets/images/cloudbank-2.svg";
 import { ReactComponent as ArrowDown } from "../../../assets/images/arrow-down-uncloak.svg";
 import ProfilePix from "../../../assets/images/ProfilePix.png";
-// import Nav from "../nav";
-// import Logo from "../../../public/images/logo-light.svg";
-// import { useRouter } from "next/router";
 
-const DashboardHeader = ({ isOpen, clicked }) => {
-  // const [isDropOpen, setDropOpen] = useState(false);
-  // const [open, setOpen] = useState(false);
+import "./styles.scss";
 
-  // const [bgChange, setBgChange] = useState(false);
-
-  // const router = useRouter();
-  // console.log(router);
-
-  // const dropHandler = (payload) => {
-  //   setDropOpen(payload);
-  // };
-
-  // const buttonStyle = [
-  //   "hamburger",
-  //   "hamburger--spring",
-  //   open ? "is-active" : null,
-  // ];
-
-  // useEffect(() => {
-  //   if (!isOpen) {
-  //     setDropOpen(false);
-  //   }
-  // }, [isOpen]);
-
-  // useEffect(() => {
-  //   setDropOpen(false);
-  // }, [router.pathname]);
-
-  useEffect(() => {
-    // const changeHeaderBg = () => {
-    //   if (window.scrollY >= 40) {
-    //     setBgChange(true);
-    //   } else {
-    //     setBgChange(false);
-    //   }
-    // };
-    // window.addEventListener("scroll", changeHeaderBg);
-    // return () => {
-    //   window.removeEventListener("scroll", changeHeaderBg);
-    // };
-  }, []);
-
+const DashboardHeader = () => {
   return (
-    <header
-      className='dash_header'
-
-      // className={`${styles.dash_header} ${bgChange || isOpen ? styles.bgDark : ""}`}
-    >
+    <header className='dash_header'>
       <div className='wrapper'>
-        {/* <div className='dash_header__notif'>
-          <span>
-            {router.asPath.slice(1)}
-            {router.pathname.slice(1)}
-            {`${router.query !== "" ? router.query.id : null}`}
-          </span>
-        </div>
-
-        <div className='dash_header__actions'>
-          <div className={styles.profile_img}>
-          <img src="" alt="profile" />
-        </div>
-
-          <div className='dropdown_wrapper'>
-            <Link to='/profile'>Peter</Link>
-          </div>
-        </div> */}
-
         <div className='brand-logo'>
           <Logo />
         </div>
@@ -116,7 +49,7 @@ const DashboardHeader = ({ isOpen, clicked }) => {
           </div>
           <div className='profile-info-wrapper'>
             <img src={ProfilePix} alt='' />
-            <div className="profile-name">
+            <div className='profile-name'>
               <h4>Austin Robertson</h4>
               <p>Marketing Administrator</p>
             </div>

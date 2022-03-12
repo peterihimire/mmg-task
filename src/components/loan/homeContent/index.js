@@ -1,5 +1,6 @@
 import React from "react";
 import HomeCard from "../../ui/card";
+
 import "./styles.scss";
 
 import LoanData from "./LoanData";

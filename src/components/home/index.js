@@ -1,7 +1,7 @@
 import React from "react";
-// import ProfilePix from "../../assets/images/ProfilePix.png";
 import Hero from "./hero";
 import HomeContent from "./homeContent";
+
 import "./styles.scss";
 
 const homePage = () => {

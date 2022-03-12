@@ -1,20 +1,17 @@
 import React, { useState, useEffect } from "react";
-import "./styles.scss";
-// import Link from "next/link";
 import { Link } from "react-router-dom";
 import Nav from "../dashboardNav";
 import Logo from "../../../assets/images/cloudbank-2.svg";
 
-// import Logo from "../../../public/images/logo-light.svg";
-// import LogoDark from "../../../public/images/logo-dark.svg";
-// import { useRouter } from "next/router";
+import "./styles.scss";
+
+
 
 const Header = ({ isOpen, clicked }) => {
   const [isDropOpen, setDropOpen] = useState(false);
 
   const [bgChange, setBgChange] = useState(false);
 
-  // const router = useRouter();
 
   const dropHandler = (payload) => {
     setDropOpen(payload);
@@ -26,9 +23,6 @@ const Header = ({ isOpen, clicked }) => {
     }
   }, [isOpen]);
 
-  // useEffect(() => {
-  //   setDropOpen(false);
-  // }, [router.pathname]);
 
   useEffect(() => {
     const changeHeaderBg = () => {

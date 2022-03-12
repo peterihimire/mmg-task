@@ -1,7 +1,5 @@
 .home-content {
-  // background-color: aqua;
   width: 100%;
-  // overflow: hidden;
 
   .grid {
     width: 100%;
@@ -13,8 +11,6 @@
     margin-right: auto;
 
     @media screen and (max-width: 1200px) {
-      // grid-template-columns: repeat(auto-fit, minmax(200px, 284px));
-      // justify-content: center;
       width: 100%;
       margin-top: 10px;
       display: grid;
@@ -31,8 +27,6 @@
     }
 
     @media screen and (max-width: 700px) {
-      // grid-template-columns: repeat(auto-fit, minmax(100%, 284px));
-      // justify-content: center;
       width: 100%;
       margin-top: 10px;
       display: grid;

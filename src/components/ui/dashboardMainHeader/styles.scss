@@ -1,5 +1,4 @@
 .dash_header {
-  // width: calc(100% - 300px);
   width: var(--full);
   height: 70px;
   position: relative;
@@ -8,27 +7,22 @@
   background-color: var(--white);
   top: 0px;
   left: 0;
-  // box-shadow: var(--box-shadow) !important;
-  border: 1px solid #EBEAED;
-  // background: #0202c6;
+  border: 1px solid #ebeaed;
 
   &.bgDark {
     background: #0202c6;
   }
 
   @media (min-width: 1271px) {
-    // left: 300px;
     z-index: 2;
   }
 
   @media (max-width: 1271px) {
     width: var(--full);
     top: 70px;
-    // box-shadow: none;
   }
 
   @media screen and (max-width: 1270px) {
-    // top: 60px;
   }
 
   @media (max-width: 903px) {
@@ -45,7 +39,6 @@
     align-items: center;
     height: 100%;
     max-width: var(--wrapper-max-width);
-    // background-color: yellow;
 
     @media (max-width: 1387px) {
       width: 90%;
