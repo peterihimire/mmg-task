@@ -5,7 +5,7 @@ import "./styles.scss";
 // import Link from "next/link";
 import { NavLink, Link } from "react-router-dom";
 import { ReactComponent as Logout } from "../../../../assets/images/turnoff.svg";
-// import Logout from "../../../../assets/images/turnoff.svg";
+// import Cloudbank from "../../../../assets/images/cloudbank-logo.svg";
 import { ReactComponent as Logo } from "../../../../assets/images/cloudbank-1.svg";
 
 // import Menu from "../../../../assets/images/menu.svg";
@@ -59,11 +59,17 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
       <div className='logo'>
         <Link to='/'>
           <Logo />
+          {/* {<img src={Cloudbank} alt='' />} */}
         </Link>
       </div>
       <ul className='navLinks'>
         <li>
-          <NavLink to='/' className='dashLink' activeClassName='active' exact={true}>
+          <NavLink
+            to='/'
+            className='dashLink'
+            activeClassName='active'
+            exact={true}
+          >
             <Menu />
             <span>Home</span>
           </NavLink>
@@ -92,11 +98,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
         </li>
 
         <li>
-          <NavLink
-            to='/loan'
-            className='dashLink'
-            activeClassName='active'
-          >
+          <NavLink to='/loan' className='dashLink' activeClassName='active'>
             <Loan />
             <span>Loan</span>
           </NavLink>
@@ -130,11 +132,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to='/settings'
-            className='dashLink'
-            activeClassName='active'
-          >
+          <NavLink to='/settings' className='dashLink' activeClassName='active'>
             <Settings />
             <span>Settings</span>
           </NavLink>

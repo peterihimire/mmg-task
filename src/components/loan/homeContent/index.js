@@ -4,7 +4,7 @@ import "./styles.scss";
 
 import LoanData from "./LoanData";
 
-const homePage = () => {
+const loanContent = () => {
   console.log(LoanData);
   return (
     <div className='home-content'>
@@ -26,4 +26,4 @@ const homePage = () => {
   );
 };
 
-export default homePage;
+export default loanContent;

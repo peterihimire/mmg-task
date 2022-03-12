@@ -49,17 +49,6 @@ const Header = ({ isOpen, clicked }) => {
   return (
     <header className='header'>
       <div className='wrapper'>
-        <div className='logo'>
-          <Link to='/'><img src={Logo} alt='' /></Link>
-        </div>
-
-        <Nav
-          bgChange={bgChange}
-          isDrop={isDropOpen}
-          isOpen={isOpen}
-          clicked={(payload) => dropHandler(payload)}
-        />
-
         <div className='hamburgerBtn'>
           <button
             type='button'
@@ -76,6 +65,20 @@ const Header = ({ isOpen, clicked }) => {
             </span>
           </button>
         </div>
+
+        <Nav
+          bgChange={bgChange}
+          isDrop={isDropOpen}
+          isOpen={isOpen}
+          clicked={(payload) => dropHandler(payload)}
+        />
+
+        <div className='logo'>
+          <Link to='/'>
+            <img src={Logo} alt='' />
+          </Link>
+        </div>
+        <div className='empty-div'></div>
       </div>
     </header>
   );

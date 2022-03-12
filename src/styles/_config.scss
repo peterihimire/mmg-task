@@ -535,15 +535,15 @@ input {
   border: none !important;
   outline: none !important;
   padding: 0 !important;
-  width: 30px !important;
+  width: 28px !important;
 }
 
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
   background-color: var(--pry-green);
-  width: 30px !important;
-  height: 2px !important;
+  width: 28px !important;
+  height: 1.8px !important;
   margin: 0;
 }
 
@@ -551,8 +551,8 @@ input {
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
   background-color: var(--pry-green);
-  width: 30px !important;
-  height: 2px !important;
+  width: 28px !important;
+  height: 1.8px !important;
   margin: 0;
 }
 
