@@ -10,10 +10,6 @@ const homePage = () => {
       <div className='wrapper'>
         <Hero />
         <HomeContent />
-        {/* <div className='test-wrapper'>
-          <h3>Homepage</h3>
-          <img src={ProfilePix} alt='' />
-        </div> */}
       </div>
     </div>
   );

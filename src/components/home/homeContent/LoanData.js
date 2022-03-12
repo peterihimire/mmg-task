@@ -4,7 +4,7 @@ import InfrastructureSvg from "../../../assets/images/Infrastructure.svg";
 import LadiesSvg from "../../../assets/images/ladies.svg";
 import PawnSvg from "../../../assets/images/Pawn.svg";
 import TermsSvg from "../../../assets/images/T&C.svg";
-import SettingsSvg from "../../../assets/images/settings.svg";
+import SettingsSvg from "../../../assets/images/settingz.svg";
 
 let LoanData;
 
