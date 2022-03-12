@@ -4,17 +4,29 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
-    color: var(--text-primary);
+    font-family: Poppins-Semi-Bold;
+
   }
   .hero-text {
     display: flex;
     align-items: center;
+    margin-top: 5px;
 
     span {
       color: var(--pry-green);
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;
+      font-family: Poppins-Regular;
+      margin-right: 5px;
+    }
+
+    p {
+      color: var(--text-primary);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: Poppins-Regular;
     }
   }
 }

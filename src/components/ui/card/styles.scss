@@ -23,6 +23,7 @@
       font-size: 18px;
       line-height: 27px;
       font-weight: 500;
+      font-family: Poppins-Medium;
     }
   }
   .cardInfo {
@@ -31,6 +32,7 @@
       font-size: 16px;
       line-height: 24px;
       color: var(--text-primary);
+      font-family: Poppins-Regular;
     }
   }
 
@@ -48,7 +50,7 @@
     .cardImage {
       img {
         width: 100% !important;
-        height: 100px;
+        height: 90px;
       }
     }
 
@@ -57,8 +59,9 @@
         color: #008080;
         margin: 10px 0;
         font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 20px;
+        font-family: Poppins-Medium;
       }
     }
     .cardInfo {
@@ -66,7 +69,8 @@
         color: var(--text-primary);
         font-weight: 400;
         font-size: 13px;
-        line-height: 20px;
+        line-height: 17px;
+        font-family: Poppins-Regular;
       }
     }
   }
