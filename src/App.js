@@ -1,6 +1,6 @@
 import { Switch, Redirect } from "react-router-dom";
 import AppRoute from "./hoc/appRoute";
-// import { useSelector } from "react-redux";
+
 
 // layouts
 // import LandingLayout from "./layouts/landing";

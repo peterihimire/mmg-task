@@ -59,58 +59,6 @@ body._fixed {
   margin: 0 auto;
 }
 
-// h1,
-// h2,
-// h3,
-// p {
-//   line-height: 1.4;
-//   margin: 0;
-// }
-
-// ul,
-// li {
-//   list-style-type: none;
-//   margin: 0;
-//   padding: 0;
-// }
-
-// a {
-//   outline: none;
-//   font-family: inherit;
-//   white-space: nowrap;
-//   text-decoration: none;
-// }
-
-// button {
-//   outline: none;
-//   font: inherit;
-//   color: inherit;
-//   cursor: pointer;
-// }
-
-// label {
-//   display: table;
-//   width: auto;
-//   margin-bottom: 10px;
-//   font-size: 14px;
-//   color: var(--text-dark);
-// }
-
-// input,
-// select {
-//   -webkit-appearance: none;
-//   appearance: none;
-//   outline: none;
-//   border-radius: 4px;
-//   border: 2px solid #e3e6ea;
-//   background: var(--fade);
-//   font-size: 14px;
-// }
-
-// select {
-//   cursor: pointer;
-// }
-
 // 1114px 1023px 900px 700px
 
 h1,
@@ -129,7 +77,7 @@ h3,
 h4,
 h5,
 h6 {
-  // font-family: Wesfy-Bold;
+  font-family: Poppins-Semi-Bold;
 }
 
 p {
@@ -290,8 +238,6 @@ textarea {
   width: 100%;
   font-family: inherit;
   border: 1.5px solid #b6b7b9;
-  // background: var(--white);
-  // background: transparent;
   background: rgba(255, 255, 255, 0.137);
   border-radius: 12px !important;
   height: 55px !important;
@@ -368,62 +314,6 @@ input[type="radio"] {
   }
 }
 
-// react-datepicker style
-// .react-datepicker-wrapper,
-.react-datepicker__input-container,
-// .react-datepicker__input-container 
-input {
-  &::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    // background: url("/images/calendar-outline.svg") no-repeat center;
-    background-size: cover;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-    display: block;
-  }
-}
-
-.react-datepicker-wrapper {
-  color: rgb(121, 121, 121) !important;
-}
-
-// dropzone
-.dropzone {
-  // border: solid 3px rgb(121, 121, 121) !important;
-  border-style: dashed;
-  border-color: #b6b7b9;
-  border-width: 2px;
-  border-radius: 16px;
-  padding: 60px 30px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  img {
-    margin-bottom: 8px !important;
-  }
-
-  p {
-    margin-bottom: 5px !important;
-    color: #333131;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 500;
-
-    &:last-of-type {
-      font-size: 10px;
-      line-height: 12px;
-      color: #65676f;
-    }
-  }
-}
 // mine
 .input-holder {
   display: flex;
